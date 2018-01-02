@@ -1,0 +1,16 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+net-libs/rtrlib:ssh - Enable SSH support
+net-misc/frr:fpm - Enable Forwarding Plane Manager support
+net-misc/frr:isis - Enable ISIS daemon
+net-misc/frr:multipath - Enable multipath routes support for any number of routes
+net-misc/frr:nhrpd - Build Next Hop Resolution Protocol daemon
+net-misc/frr:ospfapi - Enable OSPFAPI support for client applications accessing the OSPF link state database
+net-misc/frr:pam - Add support for PAM (via sys-libs/pam) to the Quagga Virtual Terminal Interface Shell (vtysh); if the readline USE flag is disabled, this flag is ignored
+net-misc/frr:pim - Enable PIM daemon
+net-misc/frr:protobuf - Enable support for dev-libs/protobuf
+net-misc/frr:readline - Enable support for sys-libs/readline to provide the Quagga Virtual Terminal Interface Shell (vtysh)
+net-misc/frr:rpki - Enable RPKI support
+net-misc/frr:shell-access - Enable user access to shell/telnet/ssh
