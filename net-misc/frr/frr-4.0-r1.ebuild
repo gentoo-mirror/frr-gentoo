@@ -45,6 +45,7 @@ RDEPEND="${COMMON_DEPEND}
 
 PATCHES=(
 	"${FILESDIR}/${PN}-2.0-ipctl-forwarding.patch"
+	"${FILESDIR}/${PN}-2207.patch"
 )
 
 DISABLE_AUTOFORMATTING=1

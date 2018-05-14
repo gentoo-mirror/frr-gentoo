@@ -5,15 +5,8 @@ EAPI=6
 
 inherit autotools eutils flag-o-matic multilib pam readme.gentoo-r1 systemd tmpfiles user vcs-snapshot
 
-if [[ ${PV} != 9999 ]]; then
-	SRC_URI="https://github.com/FRRouting/frr/archive/${P}.tar.gz"
-	KEYWORDS="amd64 x86"
-else
-	inherit git-r3
-	SRC_URI=""
-	EGIT_REPO_URI="https://github.com/FRRouting/frr.git"
-	KEYWORDS=""
-fi
+SRC_URI="https://github.com/FRRouting/frr/archive/${P}.tar.gz"
+KEYWORDS="amd64 x86"
 
 DESCRIPTION="Free Range Routing Protocol Suite, fork of Quagga"
 HOMEPAGE="https://frrouting.org/"
@@ -21,7 +14,7 @@ HOMEPAGE="https://frrouting.org/"
 LICENSE="GPL-2"
 SLOT="0"
 
-IUSE="caps fpm doc elibc_glibc ipv6 multipath nhrpd ospfapi pam protobuf +readline shell-access snmp isis pim rpki"
+IUSE="caps fpm doc elibc_glibc ipv6 multipath nhrpd ospfapi pam protobuf +readline shell-access snmp isis pim"
 
 COMMON_DEPEND="
 	!!net-misc/quagga
@@ -34,8 +27,7 @@ COMMON_DEPEND="
 		pam? ( sys-libs/pam )
 	)
 	snmp? ( net-analyzer/net-snmp )
-	!elibc_glibc? ( dev-libs/libpcre )
-	rpki? ( >=net-libs/rtrlib-0.5.0 )"
+	!elibc_glibc? ( dev-libs/libpcre )"
 DEPEND="${COMMON_DEPEND}
 	dev-perl/XML-LibXML
 	sys-apps/gawk
@@ -45,6 +37,7 @@ RDEPEND="${COMMON_DEPEND}
 
 PATCHES=(
 	"${FILESDIR}/${PN}-2.0-ipctl-forwarding.patch"
+	"${FILESDIR}/${PN}-2207.patch"
 )
 
 DISABLE_AUTOFORMATTING=1
@@ -102,8 +95,7 @@ src_configure() {
 		$(use_enable shell-access) \
 		$(use_enable ipv6 ripngd) \
 		$(use_enable ipv6 ospf6d) \
-		$(use_enable ipv6 rtadv) \
-		$(use_enable rpki)
+		$(use_enable ipv6 rtadv)
 }
 
 src_install() {
