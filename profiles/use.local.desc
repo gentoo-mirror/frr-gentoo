@@ -23,6 +23,7 @@ net-misc/frr:protobuf - Enable support for dev-libs/protobuf
 net-misc/frr:readline - Enable support for sys-libs/readline to provide the Quagga Virtual Terminal Interface Shell (vtysh)
 net-misc/frr:rip - Enable ripd
 net-misc/frr:rpki - Enable RPKI
+net-misc/frr:sanitize - Enable Address Sanitizer (requires GCC with sanitize)
 net-misc/frr:shell-access - Enable user access to shell/telnet/ssh
 net-misc/frr:snmp - Enable SNMP support
 net-misc/frr:systemd - Enable systemd support
