@@ -4,27 +4,31 @@
 
 net-libs/rtrlib:ssh - Enable SSH support
 net-misc/frr:babel - Enable babeld
+net-misc/frr:bfd - Enable FRR BFD daemon (disables Cumulus PTM-BFD external daemon suport)
 net-misc/frr:bgp - Enable bgpd
 net-misc/frr:doc - Build documentation
-net-misc/frr:eigrp - Enable eigrpd
-net-misc/frr:fabric - Enable fabricd
+net-misc/frr:eigrp - Enable eigrpd (experimental EIGRP implementation)
+net-misc/frr:fabric - Enable fabricd (OpenFabric is a routing protocol derived from IS-IS)
 net-misc/frr:fpm - Enable Forwarding Plane Manager support
-net-misc/frr:isis - Enable pimd
+net-misc/frr:isis - Enable IS-IS daemon
 net-misc/frr:ldp - Enable ldpd
-net-misc/frr:multipath - Enable multipath routes support for any number of routes
+net-misc/frr:multipath - Enable multipath routes support for any number of routes Obsolete: on FRR >=7.3 multipath cannot be disabled, setting it to `0` or disabling actually makes FRR build with the default 64 multipath paths limit.
 net-misc/frr:nhrp - Build Next Hop Resolution Protocol daemon
 net-misc/frr:nhrpd - Build Next Hop Resolution Protocol daemon (frr lower/equal 5.0)
 net-misc/frr:ospf - Enable ospfd
 net-misc/frr:ospfapi - Build OSPFAPI support (frr lower/equal 5.0)
 net-misc/frr:pam - Add support for PAM (via sys-libs/pam) to the Quagga Virtual Terminal Interface Shell (vtysh); if the readline USE flag is disabled, this flag is ignored
-net-misc/frr:pbr - Enable pbrd
+net-misc/frr:pbr - Enable pbrd (Policy Based Routing, Linux only)
 net-misc/frr:pim - Enable pimd
 net-misc/frr:protobuf - Enable support for dev-libs/protobuf
 net-misc/frr:readline - Enable support for sys-libs/readline to provide the Quagga Virtual Terminal Interface Shell (vtysh)
+net-misc/frr:realms - Enable Linux realms support
 net-misc/frr:rip - Enable ripd
 net-misc/frr:rpki - Enable RPKI
+net-misc/frr:rtadv - Build zebra with IPV6 router advertisement feature
 net-misc/frr:sanitize - Enable Address Sanitizer (requires GCC with sanitize)
 net-misc/frr:shell-access - Enable user access to shell/telnet/ssh
 net-misc/frr:snmp - Enable SNMP support
 net-misc/frr:systemd - Enable systemd support
+net-misc/frr:vrrp - Build Virtual Router Redundancy Protocol daemon.
 net-misc/frr:watchfrr - Build Watchfrr utility
