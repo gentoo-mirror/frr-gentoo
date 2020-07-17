@@ -1,0 +1,15 @@
+BDEPEND=>=net-libs/libyang-0.16.104 dev-lang/python dev-libs/json-c nhrp? ( net-dns/c-ares ) pam? ( sys-libs/pam ) rpki? ( >=net-libs/rtrlib-0.6.3[ssh] ) snmp? ( net-analyzer/net-snmp ) sys-libs/libcap sys-libs/readline grpc? ( net-libs/grpc ) doc? ( dev-python/sphinx ) sys-devel/flex virtual/yacc >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
+DEFINED_PHASES=compile configure install prepare
+DEPEND=>=net-libs/libyang-0.16.104 dev-lang/python dev-libs/json-c nhrp? ( net-dns/c-ares ) pam? ( sys-libs/pam ) rpki? ( >=net-libs/rtrlib-0.6.3[ssh] ) snmp? ( net-analyzer/net-snmp ) sys-libs/libcap sys-libs/readline grpc? ( net-libs/grpc )
+DESCRIPTION=The FRRouting Protocol Suite
+EAPI=7
+HOMEPAGE=https://frrouting.org/
+IUSE=babel +bfd +bgp doc eigrp +fabric fpm grpc +ipv6 +isis +ldp nhrp +ospf ospfapi pam pbr +pim realms rip +rpki +rtadv sanitize snmp systemd vrrp
+KEYWORDS=~x86 amd64
+LICENSE=GPL-2
+RDEPEND=!!net-misc/quagga >=net-libs/libyang-0.16.104 dev-lang/python dev-libs/json-c nhrp? ( net-dns/c-ares ) pam? ( sys-libs/pam ) rpki? ( >=net-libs/rtrlib-0.6.3[ssh] ) snmp? ( net-analyzer/net-snmp ) sys-libs/libcap sys-libs/readline grpc? ( net-libs/grpc ) acct-user/frr app-shells/bash
+REQUIRED_USE=rpki? ( bgp )
+SLOT=0
+SRC_URI=https://github.com/FRRouting/frr/archive/frr-7.4.tar.gz
+_eclasses_=autotools	7d999b62b8749fad43fff00620cedf47	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	f1194291b9a1baca337c1c89b5f7f365	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	2477ebe553d3e4d2c606191fe6c33602	pam	a1771fc1e5831c201eaf18451747d94b	systemd	71fd8d2065d102753fb9e4d20eaf3e9f	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
+_md5_=dc885434ef59655258cec7b8516874ed
