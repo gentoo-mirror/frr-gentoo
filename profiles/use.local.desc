@@ -10,6 +10,7 @@ net-misc/frr:doc - Build documentation
 net-misc/frr:eigrp - Enable eigrpd (experimental EIGRP implementation)
 net-misc/frr:fabric - Enable fabricd (OpenFabric is a routing protocol derived from IS-IS)
 net-misc/frr:fpm - Enable Forwarding Plane Manager support
+net-misc/frr:grpc - Enable gRPC plugin
 net-misc/frr:isis - Enable IS-IS daemon
 net-misc/frr:ldp - Enable ldpd
 net-misc/frr:multipath - Enable multipath routes support for any number of routes Obsolete: on FRR >=7.3 multipath cannot be disabled, setting it to `0` or disabling actually makes FRR build with the default 64 multipath paths limit.
