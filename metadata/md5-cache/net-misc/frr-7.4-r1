@@ -7,9 +7,9 @@ HOMEPAGE=https://frrouting.org/
 IUSE=babel +bfd +bgp doc eigrp +fabric fpm grpc +ipv6 +isis +ldp nhrp +ospf ospfapi pam pbr +pim realms rip +rpki +rtadv sanitize snmp systemd vrrp
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=!!net-misc/quagga >=net-libs/libyang-0.16.104 dev-lang/python:* dev-libs/json-c nhrp? ( net-dns/c-ares ) pam? ( sys-libs/pam ) rpki? ( >=net-libs/rtrlib-0.6.3[ssh] ) snmp? ( net-analyzer/net-snmp ) sys-libs/libcap sys-libs/readline grpc? ( net-libs/grpc ) acct-user/frr app-shells/bash
+RDEPEND=!!net-misc/quagga >=net-libs/libyang-0.16.104 dev-lang/python:* dev-libs/json-c nhrp? ( net-dns/c-ares ) pam? ( sys-libs/pam ) rpki? ( >=net-libs/rtrlib-0.6.3[ssh] ) snmp? ( net-analyzer/net-snmp ) sys-libs/libcap sys-libs/readline grpc? ( net-libs/grpc ) acct-user/frr app-shells/bash dev-python/ipaddr
 REQUIRED_USE=rpki? ( bgp )
 SLOT=0
 SRC_URI=https://github.com/FRRouting/frr/archive/frr-7.4.tar.gz
 _eclasses_=autotools	7d999b62b8749fad43fff00620cedf47	eutils	fcb2aa98e1948b835b5ae66ca52868c5	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	2477ebe553d3e4d2c606191fe6c33602	pam	a1771fc1e5831c201eaf18451747d94b	systemd	71fd8d2065d102753fb9e4d20eaf3e9f	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
-_md5_=eb9d48429c68bf051ffecefe7a6b357e
+_md5_=d4004344d3846461fb124d7c8c5342f5
