@@ -1,5 +1,4 @@
 acct-group/frr 0: System group: frr
 acct-group/frrvty 0: System group: frrvty
 acct-user/frr 0: System user: frr
-net-libs/rtrlib 0.8.0 9999: An open-source C implementation of the RPKI/Router Protocol client
 net-misc/frr 8.1 8.2.2 8.4.1 9999: The FRRouting Protocol Suite
